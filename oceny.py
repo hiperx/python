@@ -40,7 +40,7 @@ for i in data:
 
 
 srednia = ocenka_sum / sumka_wag
-print("przedmiot : "+row[3]+" srednia : "+ str(round(srednia, 2)))
+print("przedmiot : "+row[3]+"srednia : "+ str(round(srednia, 2)))
 print("row : ", row)
 
 
