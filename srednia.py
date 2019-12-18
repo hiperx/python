@@ -3,6 +3,7 @@ from collections import defaultdict
 
 
 przedmioty = defaultdict(list)
+data = []
 
 
 with open('ocenylaura.csv') as plik:
@@ -24,5 +25,16 @@ for przedmiot in przedmioty:
         iloraz += ocena[1]
 
     srednia = iloczyn/iloraz
+    data.append(srednia)
 
     print(przedmiot+' = '+str(round(srednia, 1)) + " ocena po zaokrgleniu : " + str(round(srednia)))
+
+ile = len(data)
+
+max = 0
+for x in data:
+    max += x 
+
+max = max / ile
+print("\n\nSrednia semestralna = " + str(round(max,2)))
+
