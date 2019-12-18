@@ -5,7 +5,7 @@ from collections import defaultdict
 przedmioty = defaultdict(list)
 
 
-with open('oenkil.csv') as plik:
+with open('ocenylaura.csv') as plik:
 
     dane = csv.reader(plik, delimiter=',')
     header = next(dane)
